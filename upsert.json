@@ -1,0 +1,113 @@
+{
+  "swap": [
+    "swap USDT to SOL", "swap SOL to USDT", "swap USDT to USDC", "swap USDC to USDT", "swap USDT to USDS", "swap USDS to USDT",
+    "swap USDT to USDE", "swap USDE to USDT", "swap USDT to CBBTC", "swap CBBTC to USDT", "swap USDT to TRUMP", "swap TRUMP to USDT",
+    "swap USDT to REND", "swap REND to USDT", "swap USDT to JUP", "swap JUP to USDT", "swap USDT to BNSOL", "swap BNSOL to USDT",
+    "swap USDT to LINK", "swap LINK to USDT", "swap USDT to GRT", "swap GRT to USDT", "swap USDT to W", "swap W to USDT",
+    "swap USDT to PYTH", "swap PYTH to USDT", "swap USDT to HNT", "swap HNT to USDT", "swap USDT to MSOL", "swap MSOL to USDT",
+    "swap USDT to BONK", "swap BONK to USDT", "swap USDT to RAY", "swap RAY to USDT", "swap USDT to JTO", "swap JTO to USDT",
+    "swap USDT to WIF", "swap WIF to USDT", "swap SOL to USDC", "swap USDC to SOL", "swap SOL to USDS", "swap USDS to SOL",
+    "swap SOL to USDE", "swap USDE to SOL", "swap SOL to CBBTC", "swap CBBTC to SOL", "swap SOL to TRUMP", "swap TRUMP to SOL",
+    "swap SOL to REND", "swap REND to SOL", "swap SOL to JUP", "swap JUP to SOL", "swap SOL to BNSOL", "swap BNSOL to SOL",
+    "swap SOL to LINK", "swap LINK to SOL", "swap SOL to GRT", "swap GRT to SOL", "swap SOL to W", "swap W to SOL",
+    "swap SOL to PYTH", "swap PYTH to SOL", "swap SOL to HNT", "swap HNT to SOL", "swap SOL to MSOL", "swap MSOL to SOL",
+    "swap SOL to BONK", "swap BONK to SOL", "swap SOL to RAY", "swap RAY to SOL", "swap SOL to JTO", "swap JTO to SOL",
+    "swap SOL to WIF", "swap WIF to SOL",
+    "swap 1 usdc to sol", "swap bonk to sol", "swap jup to bonk", "exchange sol to usdc", "Swap SOL to USDT", "Swap TRUMP to JUP",
+    "Exchange USDC for USDT", "swap SOL for some BONK", "Trade USDT for SOL", "Convert my SOL to USDT", "Can I swap USDC to BONK?",
+    "Exchange SOL for USDT please", "Swap 0.1 SOL to JUP", "Trade tokens: SOL to USDT", "Switch 10 USDC for USDT",
+    "Convert SOL to USDT now", "Swap my tokens from SOL to USDT", "Exchange 2 SOL to USDC quickly", "Swap sol to usdt",
+    "Swap SOL USDT", "Swap from SOL to USDT", "Swap SOL and USDT", "Swap my SOL to USDT and then buy BONK",
+    "I want to swap 50 JUP for BONK", "change BONK into SOL", "convert 25 USDT into PYTH", "turn my USDC into SOL",
+    "swap token A for token B", "exchange 100 RAY into WIF", "trade 5 sol into usdt"
+  ],
+  "buy": [
+    "buy USDT", "buy SOL", "buy USDC", "buy USDS", "buy USDE", "buy CBBTC", "buy TRUMP", "buy REND", "buy JUP", "buy BNSOL",
+    "buy LINK", "buy GRT", "buy W", "buy PYTH", "buy HNT", "buy MSOL", "buy BONK", "buy RAY", "buy JTO", "buy WIF",
+    "Buy JUP", "Buy BONK", "Buy me a BONK token", "Buy me some JUP", "Buy token DpiuU4KNJEDf9aFWzomTNTg7i6vPVpypiJSokmJ6jHAb",
+    "Buy the domain thris.sol", "I want to purchase abhi.solana", "Create a Blink to buy mydomain.letsbonk", "Register the domain .monad",
+    "Buy me degenhub.degen", "Buy newtoken.eth", "Purchase JUP", "Acquire BONK", "Get me some USDC", "Buy token with ID 1234567890",
+    "Purchase SOL now", "Acquire token DpiuU4KNJEDf9aFWzomTNTg7i6vPVpypiJSokmJ6jHAb", "Buy the domain xyz.eth", "I want to acquire abhi.solana",
+    "Purchase mydomain.letsbonk", "Register .monad domain", "Buy me degenhub.degen", "Get newtoken.eth", "Buy bonk", "Purchase BONK",
+    "Acquire bonk token", "Get some BONK", "Buy SOL and then lock it",
+    "purchase SOL instantly", "buy crypto", "get BONK token", "I want to order 10 USDC", "acquire some SOL",
+    "let me buy some BONK quickly", "purchase coins", "buy tokens for me", "buy and hold JUP"
+  ],
+  "donation": [
+    "Create a donation Blink for 3aBBjvYi2E9t3xjEwS9FTasW9K6fP8dDfJpZ4pZm1K9P", "I want a donation Blink for my wallet address DJrbKje9udU4M3WfGhKKziS6E7rNYGb5DkEdJNCMZV1K",
+    "Generate a donation link for 9jHi87Fe7YTYpLjVK5hxt3FZNYG6kSEUew4h2zqdcJYZ", "Create a Blink for donations to EqrXt7A4BFan5xjLQW1DRN8ACM3PN3LMd3hQhhtcfJtb",
+    "Set up a donation link for my wallet", "Donate to this address please", "Create a donation page for 5aBBjv...", "I need to donate using my wallet",
+    "Generate a link for donations to DJrbK...", "How do I make a donation?", "Donate now to 9jHi87...", "Create a donation Blink for my cause",
+    "Set up a donation for EqrXt7...", "Donate to support the project", "Donate to my wallet and then swap some tokens",
+    "please donate 5 SOL", "I want to donate to this charity", "send 10 USDC as donation", "make a gift payment", "tip BONK to creator",
+    "give some tokens to a wallet", "fund this wallet", "support with crypto donation"
+  ],
+  "game": [
+    "Create a Blink for a coin flip game", "I want to play a coin flip with SEND COIN", "Generate a coin flip Blink", "How do I play a coin flip game using SEND COIN",
+    "Give me a Blink to start a coin flip game", "Create a Blink for Rock Paper Scissors", "I want to play Rock Paper Scissors using SEND COIN",
+    "Generate a Rock Paper Scissors Blink", "How do I play Rock Paper Scissors with SEND COIN", "Start a Rock Paper Scissors game using a Blink",
+    "Create a Blink for Snake and Ladders", "I want to play Snake and Ladders using SEND COIN", "Generate a Snake and Ladders Blink",
+    "How do I play Snake and Ladders with SEND COIN", "Start a Snake and Ladders game using a Blink", "Play a coin flip game now",
+    "Start rock paper scissors with me", "Generate a Snake and Ladders link", "Can I play coin flip?", "Rock paper scissors game please",
+    "Snake and Ladders game start", "Play coin flip using SEND COIN", "Start a rock paper scissors match", "Generate a link for Snake and Ladders",
+    "How to play coin flip game", "Rock paper scissors with friends", "Snake and Ladders Blink creation", "Play a game of coin flip",
+    "Start rock paper scissors now", "Snake and Ladders game link", "Play coin flip and then swap tokens", "Rock paper scissors after donation",
+    "play tic tac toe", "launch a poker blink", "start blackjack game", "play roulette blink", "I want a casino game blink",
+    "create a dice roll game", "start trivia blink game", "let’s play rock paper scissors online"
+  ],
+  "static": [
+    "How do I lock my BONK for 12 months to earn rewards?", "Create a Blink to lock BONK for 12 months", "I want to stake my BONK for 12 months",
+    "Generate a link to lock BONK and receive rewards", "How can I earn BONK rewards by locking my tokens for 12 months?", "Give me a Blink to lock BONK for a year",
+    "Set up a BONK lock for 12 months to earn rewards", "How to stake my BONK for a year?", "Create a Blink to lock BONK for 12 months and earn rewards",
+    "I want to lock my BONK for one year", "How do I buy a Keystone Wallet?", "Create a Blink to purchase Keystone Wallet", "I want to buy a Keystone Wallet",
+    "Generate a link to buy Keystone Wallet", "How can I purchase a Keystone Wallet?", "Give me a Blink to buy Keystone Wallet", "Where can I get a Keystone Wallet?",
+    "Create a link for purchasing Keystone Wallet", "Buy Keystone Wallet", "I want to order a Keystone Wallet", "Lock BONK to earn rewards",
+    "Stake my BONK for a year", "Set up BONK locking for rewards", "Buy a new Keystone Wallet", "Purchase Keystone Wallet online", "Get a Keystone Wallet now",
+    "Order Keystone Wallet today", "Lock my BONK for 6 months", "Stake BONK to receive rewards", "Buy the latest Keystone Wallet", "Create a link to lock BONK",
+    "I need to buy a Keystone Wallet", "Lock BONK for earning", "Stake my tokens for BONK rewards", "Purchase a secure Keystone Wallet",
+    "Lock BONK and then buy more", "Buy Keystone Wallet after swapping", "How do I deposit on Lulo and start earning?", "Create a Blink to deposit on Lulo",
+    "I want to grow my wealth with Lulo", "Generate a Lulo deposit Blink", "Where can I deposit and earn on Lulo?", "Start earning by depositing on Lulo",
+    "Deposit my funds on Lulo and begin earning", "How can I use Lulo to grow my wealth?", "Give me a Blink for depositing into Lulo", "Earn rewards by depositing on Lulo"
+  ],
+  "stake": [
+    "Create a Blink to stake SOL", "Stake BonK1YhkXEGLZzwtcvRTip3gAL9nCeQD7ppZBLXhtTs", "Create a Blink to stake SOL into jupSOL", "How do I stake my SOL to jupSOL?",
+    "I want to convert my SOL to jupSOL by staking.", "Generate a staking Blink for jupSOL.", "Stake my SOL to jupSOL using a Blink.",
+    "stake 10 SOL", "stake 500 BONK", "lock my tokens for yield", "stake crypto for rewards", "delegate SOL to validator",
+    "stake tokens securely", "earn yield by staking", "convert SOL into staked SOL"
+  ],
+  "balance": [
+    "check balance of my wallet", "what’s my SOL balance?", "show USDC balance",
+    "wallet balance please", "how much BONK do I have?", "view my holdings",
+    "display SOL in my wallet", "how many JUP tokens are in my wallet?",
+    "account balance check", "what’s the balance of this wallet?",
+    "check balance of 9jHi87...", "show me token balance", "wallet portfolio view",
+    "get SOL in my wallet", "how much RAY do I own?", "balance lookup",
+    "fetch balance for account", "display account holdings"
+  ],
+  "price": [
+    "what is the price of SOL?", "get price of USDC", "how much is BONK worth?",
+    "current value of JUP", "token price for USDT", "check the price of LINK",
+    "what’s the rate of RAY today?", "price of SOL in usd", "show me PYTH price",
+    "live price of TRUMP token", "get me the latest MSOL price", "USDE token value",
+    "current trading price of BONK", "market price for SOL", "value of GRT now",
+    "token worth today", "check coin value", "crypto price lookup"
+  ],
+  "domain": [
+    "buy abhi.sol", "purchase myname.sol", "register xyz.sol", "is abc.sol available?",
+    "I want to acquire degen.sol", "create a Blink to buy wallet.sol", "get mydomain.letsbonk",
+    "register monad.sol", "how do I buy a solana domain?", "purchase .sol domain now",
+    "register domain for me", "acquire xyz.solana", "purchase .bonk domain",
+    "buy this username.sol", "domain availability check", "where to buy solana domain",
+    "get .sol name", "I want a web3 domain"
+  ],
+  "transfer": [
+    "transfer 5 sol to 9jHi87Fe7YTYpLjVK5hxt3FZNYG6kSEUew4h2zqdcJYZ",
+    "send 10 USDT to my friend", "move JUP tokens to another wallet",
+    "send 100 BONK to DJrbK...", "transfer SOL into wallet 9jHi87...", "send usdc to my other account",
+    "transfer tokens quickly", "make a transfer of 50 RAY", "send sol to wallet address",
+    "move funds from my wallet", "transfer some USDT now",
+    "send 1 SOL", "gift tokens to friend", "forward BONK to new wallet",
+    "remit crypto", "make a token payment", "transfer funds safely",
+    "airdrop SOL to wallet", "push tokens to another address"
+  ]
+}
