@@ -1,6 +1,5 @@
 from sentence_transformers import SentenceTransformer
 
-# Load the embedding model once (cached globally)
 _model = SentenceTransformer("all-mpnet-base-v2")
 
 def generate_embedding(text: str) -> list:

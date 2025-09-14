@@ -1,16 +1,15 @@
-# src/insert_embeddings.py
-
 import sys, os, json
 from pathlib import Path
 
-# Make sure "src" is on sys.path so absolute imports always work
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.intent_recognition import index
 from src.embeddings import generate_embedding
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+UPSERT_FILE = os.path.join(ROOT, "data", "upsert.json")
 
 
-def upsert_intents(filepath: str = "upsert.json"):
+def upsert_intents(filepath: str = UPSERT_FILE):
     """
     Load training examples from a JSON file and insert them into Pinecone.
     """

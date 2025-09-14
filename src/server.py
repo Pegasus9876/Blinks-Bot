@@ -10,7 +10,7 @@ class QueryRequest(BaseModel):
 
 @app.get("/")
 def root():
-    return {"message": "Blink Bot API is running 🚀"}
+    return {"message": "Blink Bot API is running "}
 
 @app.post("/process")
 def process_query(request: QueryRequest):

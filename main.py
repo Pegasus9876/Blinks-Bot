@@ -1,5 +1,13 @@
+import time
 from src.intent_recognition import classify_intent
 from src.entities import parse_intent
+
+def rick_roll_lyrics():
+    lyrics = "Never gonna give you up, never gonna let you down".split()
+    for word in lyrics:
+        print(word, end=" ", flush=True)
+        time.sleep(0.40)  
+    print("\n")
 
 def main():
     print("Blink Bot CLI is running. Type 'exit' to quit.\n")
@@ -7,19 +15,16 @@ def main():
     while True:
         query = input("Enter your query: ").strip()
         if query.lower() in ["exit", "quit"]:
-            print("Goodbye!")
+            print("\Incoming!")
+            rick_roll_lyrics()
             break
 
-        # Step 1: classify the intent (handles static + Pinecone similarity)
         intent = classify_intent(query)
         if not intent:
             print("Sorry, I could not determine your intent.\n")
             continue
 
-        # Step 2: parse details for that intent
         result = parse_intent(intent, query)
-
-        # Step 3: output result
         if result:
             print(f"\nDetected intent: {intent}")
             print("Result:", result)

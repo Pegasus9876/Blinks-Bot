@@ -1,15 +1,22 @@
 import sys
 import os
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, ROOT)
 
-# Ensure src is on PYTHONPATH
+import json
+try:
+    from colorama import Fore, Style, init
+    init(autoreset=True)
+    GREEN, RED, CYAN, YELLOW, RESET = (
+        Fore.GREEN, Fore.RED, Fore.CYAN, Fore.YELLOW, Style.RESET_ALL
+    )
+except ImportError:
+    GREEN = RED = CYAN = YELLOW = RESET = ""
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 
 from src.intent_recognition import classify_intent
 from src.entities import parse_intent
-
-# -------------------------
-# Test queries
-# -------------------------
 QUERIES = [
     "open Keystone Wallet",
     "deposit funds on Lulo",
@@ -34,25 +41,29 @@ QUERIES = [
     "Create a Blink for snake and ladders",
 ]
 
-# -------------------------
-# Runner
-# -------------------------
 def run_tests():
-    for query in QUERIES:
-        print("-" * 50)
-        print(f"Query: {query}")
+    for idx, query in enumerate(QUERIES, 1):
+        print(f"\n{CYAN}{'-'*60}{RESET}")
+        print(f"{YELLOW}Test {idx}: {RESET}{query}")
 
-        # Step 1: classify intent
-        intent = classify_intent(query)
-        print(f"Detected intent: {intent}")
+        try:
+            # Step 1: classify intent
+            intent = classify_intent(query)
+            print(f"{GREEN}Detected intent:{RESET} {intent}")
 
-        # Step 2: parse entities/params
-        result = parse_intent(intent, query) if intent else None
-        print(f"Result: {result}")
+            # Step 2: parse entities/params
+            result = parse_intent(intent, query) if intent else None
 
-        # Step 3: Show URL (if available)
-        if result and isinstance(result, dict) and "url" in result:
-            print(f"👉 Link: {result['url']}")
+            if result:
+                print(f"{GREEN}Parsed result:{RESET}")
+                print(json.dumps(result, indent=2))
+                if "url" in result:
+                    print(f"{CYAN}Link:{RESET} {result['url']}")
+            else:
+                print(f"{RED}No result parsed.{RESET}")
+
+        except Exception as e:
+            print(f"{RED}Error while processing query:{RESET} {e}")
 
 
 if __name__ == "__main__":
