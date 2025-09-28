@@ -1,5 +1,3 @@
-# Blinks-Bot — README
-
 A pragmatic assistant for Solana token actions (swap, price, balance, stake, donate, games, etc.).  
 This repo contains a CLI + lightweight intent/entity parsing pipeline and a small HTTP endpoint for integration.
 
