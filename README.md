@@ -165,6 +165,7 @@ Blinks-Bot/
 ├─ .env.example
 └─ README.md
 ```
+<img width="1570" height="3839" alt="Mermaid_Blink-bot" src="https://github.com/user-attachments/assets/10afbb64-7280-4c17-a0a1-24577625dbd3" />
 
 ---
 
