@@ -73,10 +73,10 @@ Try sample queries:
    - `buy a keystone wallet`  
    - `can you please swap jup to sol`
 
-   
-    ```bash
+
+   ```bash
    python src/tests/test_processor.py
-      ```
+   ```
 
 ---
 
@@ -143,7 +143,7 @@ uvicorn src.server:app --reload
 
 ---
 
-## File structure (suggested)
+## File structure
 
 ```
 Blinks-Bot/
