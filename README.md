@@ -18,6 +18,21 @@ This repo contains a CLI + lightweight intent/entity parsing pipeline and a smal
 
 ---
 
+## Deep Overview
+
+Blink-Bot is built with a **RAG-inspired architecture**, combining AI embeddings with structured Solana token actions. Here's a deeper look:
+
+- **Embedding + Vector Search**: Queries are transformed into embeddings using **Hugging Face’s sentence-transformers**. Pinecone serves as the vector DB to find nearest intent matches efficiently.
+- **Intent Recognition Pipeline**: A hybrid of **static rules + vector similarity search** ensures robust detection even for ambiguous queries.
+- **Entity Extraction**: Tokens, wallet addresses, amounts, and domains are parsed with a lightweight extractor.
+- **Fallback Mechanism**: If a token isn’t found locally, the bot queries Jupiter’s lite-search API for coverage.
+- **Security & Privacy**: No user data is stored outside the local session or Pinecone index; you retain full control of keys.
+- **Extensibility**: Easy to upsert new intents or actions using `tools/upsert_intents.py`.
+
+This section is aimed at developers who want to understand the inner workings, edge handling, and the AI + Web3 synergy behind Blink-Bot.
+
+---
+
 ## Quickstart (local dev)
 
 1. Clone repo and move to project root
