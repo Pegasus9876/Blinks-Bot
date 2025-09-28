@@ -10,12 +10,12 @@ def rick_roll_lyrics():
     print("\n")
 
 def main():
-    print("Blink Bot CLI is running. Type 'exit' to quit.\n")
+    print("Blink Bot is up. Type 'exit' to quit.\n")
 
     while True:
         query = input("Enter your query: ").strip()
         if query.lower() in ["exit", "quit"]:
-            print("\Incoming!")
+            print("Incoming!")
             rick_roll_lyrics()
             break
 

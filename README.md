@@ -1,6 +1,6 @@
-# Blink-Bot — README
+# Blinks-Bot — README
 
-A small, pragmatic assistant for Solana token actions (swap, price, balance, stake, donate, games, etc.).
+A pragmatic assistant for Solana token actions (swap, price, balance, stake, donate, games, etc.).  
 This repo contains a CLI + lightweight intent/entity parsing pipeline and a small HTTP endpoint for integration.
 
 ---
@@ -10,10 +10,10 @@ This repo contains a CLI + lightweight intent/entity parsing pipeline and a smal
 * `main.py` — interactive CLI for quick play (type queries, get parsed results / links).
 * `src/intent_recognition.py` — intent classifier (static rules + embeddings + Pinecone lookup).
 * `src/entities.py` — entity parsers (token extraction, wallet, domain, amount, URL generation).
-* `src/token_loader.py` — downloads the Solana token list and writes `src/data/tokens.json`.
-* `src/data/tokens.json` — cached token symbol list (preloaded for fast lookups).
+* `src/token_loader.py` — downloads the Solana token list and writes `data/tokens.json`.
+* `data/tokens.json` — cached token symbol list (preloaded for fast lookups).
 * `src/tests/test_processor.py` — integration-style tests that run classification + entity parsing.
-* `data/upsert.json` (or `src/data/upsert.json`) — training examples used by the upsert script.
+* `data/upsert.json` — training examples used by the upsert script.
 * `tools/upsert_intents.py` — upsert training examples into Pinecone (embedding + index).
 
 ---
@@ -23,7 +23,7 @@ This repo contains a CLI + lightweight intent/entity parsing pipeline and a smal
 1. Clone repo and move to project root
 
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Pegasus9876/Blinks-Bot
    cd blink-bot
    ```
 
@@ -40,26 +40,43 @@ This repo contains a CLI + lightweight intent/entity parsing pipeline and a smal
    pip install -r requirements.txt
    ```
 
-4. Refresh token cache (download Solana token list)
+4. Create a `.env` file in the project root and add your Pinecone API key:  
 
-   ```bash
-   python src/token_loader.py --refresh (not necessarily required)
+   Pinecone is a vector database to store and query embeddings.  
+   [pinecone.io](https://www.pinecone.io) to create an API key.  
+
+   ```ini
+   PINECONE_API_KEY=your-pinecone-api-key
+   PINECONE_INDEX_NAME=blinkbot
    ```
 
-5. Run CLI
+5. Refresh token cache (download Solana token list) --> optional
+
+   ```bash
+   python src/token_loader.py --refresh
+   ```
+
+6. Run CLI
 
    ```bash
    python main.py
    ```
 
-6. Run tests
+7. Run tests
 
- enter your queries,
- try : 
-        1. swap usdc to eth
-        2. buy bonk
-        3. buy a keystone wallet
-        4. can you please swap jup to sol
+
+   
+
+Try sample queries:  
+   - `swap usdc to eth`  
+   - `buy bonk`  
+   - `buy a keystone wallet`  
+   - `can you please swap jup to sol`
+
+   
+    ```bash
+   python src/tests/test_processor.py
+      ```
 
 ---
 
@@ -67,16 +84,16 @@ This repo contains a CLI + lightweight intent/entity parsing pipeline and a smal
 
 `src/entities.py` uses a two-level approach to identify token symbols:
 
-1. **Local cache** — `src/data/tokens.json` (fast lookup). Created/updated via `src/token_loader.py --refresh`.
+1. **Local cache** — `data/tokens.json` (fast lookup). Created/updated via `src/token_loader.py --refresh`.
 2. **Lightweight fallback API** — Jupiter lite-search (`https://lite-api.jup.ag/tokens/v2/search?query=`).
 
-Force-refresh the token file:
+Force-refresh the token file: --> not needed
 
 ```bash
 python src/token_loader.py --refresh
 ```
 
----
+--- 
 
 ## Upserting intent examples to Pinecone
 
@@ -129,7 +146,7 @@ uvicorn src.server:app --reload
 ## File structure (suggested)
 
 ```
-blink-bot/
+Blinks-Bot/
 ├─ main.py
 ├─ requirements.txt
 ├─ src/
@@ -137,11 +154,15 @@ blink-bot/
 │  ├─ entities.py
 │  ├─ token_loader.py
 │  ├─ embeddings.py
+│  ├─ server.py
 │  ├─ tests/
 │  │  └─ test_processor.py
-│  └─ data/
-│     ├─ tokens.json
-│     └─ upsert.json
+├─ data/
+│  ├─ tokens.json
+│  └─ upsert.json
+├─ tools/
+│  └─ upsert_intents.py
+├─ .env.example
 └─ README.md
 ```
 
@@ -151,4 +172,4 @@ blink-bot/
 
 * Improve token extraction.
 * Add confidence scoring to intent recognition.
-* Add unit tests for entities.extr
+* Add unit tests for entities.
